@@ -8,7 +8,8 @@ from persona_engine import calculate_persona_scores, get_persona_label
 
 # ENV
 load_dotenv()
-api_key = st.secrets("OPENROUTER_API_KEY")
+api_key = os.getenv("OPENROUTER_API_KEY")
+
 
 st.set_page_config(page_title="Exam Oracle", page_icon="🔮", layout="centered")
 
